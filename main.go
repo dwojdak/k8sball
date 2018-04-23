@@ -20,6 +20,14 @@ func static_handler(rw http.ResponseWriter, req *http.Request) {
     rw.Header().Set("Content-Type", "text/css")
     path = "style.css"
   }
+  if path == "magic8ballQuestion.png" {
+    rw.Header().Set("Content-Type", "image/png")
+    path = "magic8ballQuestion.png"
+  }
+  if path == "answerside.png" {
+    rw.Header().Set("Content-Type", "image/png")
+    path = "answerside.png"
+  }
   if bs, err := Asset(path); err != nil {
     rw.WriteHeader(http.StatusNotFound)
   } else {
