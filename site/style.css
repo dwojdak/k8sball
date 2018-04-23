@@ -34,14 +34,15 @@ position: relative;
   max-width: 40em;
 }
 .answer {
-  color: #222;
+  color: #fff;
   text-transform: uppercase;
   margin: 0;
   position: absolute;
   top: 38%;
   left: 46%;
   width: 11%;
-  font-size: 60%;
+  font-size: 1.5vmin;
+  overflow-wrap: break-word;
 }
 
 #questionButton {
